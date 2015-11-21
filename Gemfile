@@ -49,9 +49,6 @@ gem 'execjs'
 
 gem "font-awesome-rails"
 
-group :development, :test do
-  gem 'sqlite3'
-end
-group :production do
-  gem 'pg'
-end
+gem 'pg'
+
+gem 'rails_12factor', group: :production
